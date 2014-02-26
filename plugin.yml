@@ -1,0 +1,9 @@
+name: CombatRegion
+main: com.pablo67340.region.CombatRegion
+version: 0.1
+author: pablo67340
+description: PvP regions redefined.
+depend: [WorldGuard, CombatTag]
+commands:
+  crreload:
+    description: reload combatregion

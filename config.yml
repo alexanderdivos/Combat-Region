@@ -1,0 +1,54 @@
+## CombatRegion Configuration ##
+## A final solution to ugly pvp dropdowns :) ##
+## And did I mention it's not glitchy? ##
+#    ___           _          _   ___          _          
+#   / __|___ _ __ | |__  __ _| |_| _ \___ __ _(_)___ _ _  
+#  | (__/ _ \ '  \| '_ \/ _` |  _|   / -_) _` | / _ \ ' \ 
+#   \___\___/_|_|_|_.__/\__,_|\__|_|_\___\__, |_\___/_||_|
+#                                        |___/            
+## Version: 0.1 ##
+# Found a bug? Make a ticket!
+##
+#
+
+# Let players know the server uses CombatRegion on Join?
+motd: true
+
+# Prefix before alerts/commands. #
+prefix: "&7[&cCombatRegion&7]&r"
+
+# Allow players to be hit if tagged in combat, even in a no-pvp region?
+pvpbypass: true
+# If set to false, hit detection at the border of regions may be delayed!
+# Working on a fix to this!
+
+# When should CombatRegion protect a region?
+##
+# If TRUE, Requires:
+# COMBAT TAG: http://dev.bukkit.org/bukkit-plugins/combat-tag/
+##
+# TRUE = players can't enter if tagged in pvp but can enter when not tagged
+# FALSE = players can't enter unless they teleport inside
+pvptag: true
+
+# Region Names? #
+# The name of the WorldGuard regions you would like CombatRegion to dissallow entry into.
+# Don't use regions that span the entire map... :)
+regions:
+  - 'spawn'
+  - 'wild'
+  - 'pvp'
+
+# Message to send players who try to get back in? #
+msg: "&7You can't run away from &cpvp&7! Use &f/ct&7!"
+
+# Don't want CombatRegion in certain worlds? Specify them here.
+disabledworlds:
+  - 'world_nether'
+  - 'world_the_end'
+
+###############################################
+# Developed by, pablo67340.                   #
+# Can be found at www.projectxeon.net         #
+# Support available on Skype 'pablo673400'.   #
+###############################################
